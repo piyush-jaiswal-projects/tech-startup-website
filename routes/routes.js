@@ -4,4 +4,4 @@ const controllers = require('./../controllers/controllers');
 
 router.get('/say-something', controllers.saySomething);
 
-module.exports = router;    
+module.exports = router;

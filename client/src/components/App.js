@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../styles/App.css';
 import axios from 'axios'
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
   };
   
   componentDidMount() {
-    axios.get('/api/v1/say-something').then((res) => {
+    axios.get('/say-something').then((res) => {
       const response = res.data;
       this.setState({response});
     });
