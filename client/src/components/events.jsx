@@ -12,7 +12,6 @@ function Events(){
 
         <div className="event-para-div">
         <p className="event-para">We conduct lots of awareness workshops and events on recent developments in world of cyber security.</p>
-        <br></br>
         <button className="event-btn">Register to get notified</button>
         </div>
 
