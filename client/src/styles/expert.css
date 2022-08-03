@@ -1,0 +1,12 @@
+.expert-section{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.expert-bg-img{
+    position: absolute;
+    width: 98vw;
+}
+
