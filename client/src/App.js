@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './styles/App.css';
 import Header from "./components/header";
 import Landing from "./components/landing";
+import Services from "./components/services";
 // import axios from 'axios'
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Landing />
+        <Services />
       </div>
     );
   }
