@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     position: relative;
     top: 12vh;
+    z-index: -1000;
 }
 
 .tagline-box{
