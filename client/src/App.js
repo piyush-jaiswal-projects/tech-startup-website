@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Landing from "./components/landing";
 import Services from "./components/services";
 import Expert from "./components/expert";
+import Stats from "./components/stats";
 // import axios from 'axios'
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
         <Landing />
         <Services />
         <Expert />
+        <Stats />
       </div>
     );
   }
