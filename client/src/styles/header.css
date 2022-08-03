@@ -1,7 +1,7 @@
 .header{
     margin: 0;
     padding: 0rem;
-    height: 5rem;
+    height: 10vh;
     background-color: aliceblue;
     transition: 0s;
     position: fixed;
@@ -14,7 +14,6 @@
     z-index: 1000;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
     transition: 0.5s;
-    padding-bottom: 1vh;
 }
 
 .nav-bar a{
@@ -127,19 +126,19 @@
       float: right;
       display: block;
       position: relative;
-      bottom: 1vh;
+      bottom: 2.2vh;
     }
 
     .site-logo{
-        height: 9vh;
-        width: 9vh;
-        padding: 1vh 1vw 1vh 5vw;
+        height: 6vh;
+        width: 6vh;
+        padding: 2vh 1vw 1vh 5vw;
     }
     
     .site-title{
         font-family: 'Roboto Condensed', sans-serif;
         color: rgb(18, 63, 145);
-        margin-top: 2vh;
-        font-size: 6vh;
+        margin-top: 2.3vh;
+        font-size: 4vh;
     }
   }
