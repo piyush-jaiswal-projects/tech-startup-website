@@ -115,6 +115,11 @@
       display: block;
       text-align: right;
     }
+    .site-logo{
+        height: 6vh;
+        width: 6vh;
+        padding: 2vh 1vw 1vh 5vw;
+    }
   }
 
   @media screen and (max-width: 400px) {

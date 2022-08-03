@@ -31,8 +31,8 @@ class App extends Component {
         <Stats />
         <Events />
         <Gallery />
-        {/* <Contacts />
-        <Footer /> */}
+        <Contacts />
+        <Footer />
       </div>
     );
   }
