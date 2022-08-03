@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/header.css';
+import $ from 'jquery';
 
 function Header(){
 
@@ -23,7 +24,7 @@ function Header(){
   }
     
         return (
-          <div class="header">
+          <div class="header" id="header">
             <img class="site-logo" alt="logo" src="media/icon1.png"></img>
             <h1 class="site-title">swiftConnect</h1>
             <div class="nav-bar" id="navBar">
@@ -57,5 +58,12 @@ function Header(){
         );
       
 }
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 50) {
+     $('#header').addClass('header-bar-scroll');
+  } else {
+     $('#header').removeClass('header-bar-scroll');
+  }
+});
 
 export default Header;
