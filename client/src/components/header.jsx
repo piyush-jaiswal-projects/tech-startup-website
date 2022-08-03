@@ -56,7 +56,7 @@ function Header(){
             <a class="nav-link not div-link" href='#' onClick={openSearch}>&#128269;</a>
             <a class="nav-link not div-link" href='/signin'>Sign in</a>
             <a class="nav-link not div-link" href='/about'>About</a>
-            <a class="nav-link not div-link" href='/services'>Services</a>
+            <a class="nav-link not div-link" href='/service'>Services</a>
             <a class="nav-link not div-link" href='/articles'>Blog</a>
             <a class="nav-link active not div-link" href='/'>Home</a>
             <a href="#" class="nav-link icon" onClick={responsiveBarOpen}>

@@ -13,13 +13,7 @@ import Chatbot from "./components/chatbot";
 // import axios from 'axios'
 
 class App extends Component {
-  // componentDidMount() {
-  //   axios.get('/say-something').then((res) => {
-  //     const response = res.data;
-  //     this.setState({response});
-  //   });
-  // }
-
+  
   render() {
     return (
       <div className="App">
