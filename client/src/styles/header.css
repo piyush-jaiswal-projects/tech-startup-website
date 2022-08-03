@@ -50,15 +50,15 @@
 }
 
 .site-logo{
-    height: 10vh;
-    width: 10vh;
-    padding: 2vh 1vw 1vh 5vw;
+    height: 7vh;
+    width: 7vh;
+    padding: 2vh 0.5vw 1vh 5vw;
 }
 
 .site-title{
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(18, 63, 145);
-    margin-top: 3vh;
+    margin-top: 2.5vh;
     font-size: 6vh;
 }
 
