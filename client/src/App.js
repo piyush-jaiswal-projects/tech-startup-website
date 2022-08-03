@@ -9,6 +9,7 @@ import Contacts from "./components/contacts";
 import Gallery from "./components/gallery";
 import Events from "./components/events";
 import Footer from "./components/footer";
+import Chatbot from "./components/chatbot";
 // import axios from 'axios'
 
 class App extends Component {
@@ -23,13 +24,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Chatbot />
         <Landing />
         <Services />
         <Expert />
         <Stats />
         <Events />
-        {/* <Gallery />
-        <Contacts />
+        <Gallery />
+        {/* <Contacts />
         <Footer /> */}
       </div>
     );
