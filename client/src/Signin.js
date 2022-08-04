@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Landing from "./components/landing";
+
+const signinLanding = {
+  title: "Signin to unlock best security",
+  para: "Register or signin to avail our products, internet and cyber security services.",
+  img: "media/12.png",
+  alt: "Shop"
+};
 
 class Signin extends Component {
   
@@ -9,6 +17,7 @@ class Signin extends Component {
       return (
         <div className="Signin">
           <Header />
+          <Landing data={signinLanding} />
           <Footer />
         </div>
       );

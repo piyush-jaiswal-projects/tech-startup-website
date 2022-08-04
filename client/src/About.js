@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Landing from "./components/landing";
+import Contacts from "./components/contacts";
+
+const aboutLanding = {
+  title: "We ensure your swift and secure internet surfing.",
+  para: "We are a team of skilled and professional, developers and cyber security experts.",
+  img: "media/10.png",
+  alt: "About"
+};
 
 class About extends Component {
   
@@ -9,6 +18,8 @@ class About extends Component {
       return (
         <div className="About">
           <Header />
+          <Landing data={aboutLanding} />
+          <Contacts />
           <Footer />
         </div>
       );

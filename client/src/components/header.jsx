@@ -51,7 +51,7 @@ function Header(){
 
 
             <img class="site-logo" alt="logo" src="media/icon1.png"></img>
-            <h1 class="site-title">swiftConnect</h1>
+            <h1 class="site-title" >swiftConnect</h1>
             <div class="nav-bar" id="navBar">
             <a class="nav-link not div-link" href='#' onClick={openSearch}>&#128269;</a>
             <a class="nav-link not div-link" href='/signin'>Sign in</a>
