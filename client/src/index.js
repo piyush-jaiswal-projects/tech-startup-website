@@ -6,6 +6,7 @@ import Blog from './Blog';
 import Shop from './Shop';
 import About from './About';
 import Signin from './Signin';
+import Userportal from "./userportal";
 import { render } from "react-dom";
 import {
   BrowserRouter,
@@ -41,6 +42,12 @@ render(
         <Route path="/signin" element={
           <div>
           <Signin />
+          </div>
+        } />
+
+        <Route path="/userportal" element={
+          <div>
+          <Userportal />
           </div>
         } />
         

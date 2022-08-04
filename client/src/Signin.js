@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Landing from "./components/landing";
+import UserSignin from "./components/usersignin";
 
 const signinLanding = {
   title: "Signin to unlock best security",
@@ -18,6 +19,7 @@ class Signin extends Component {
         <div className="Signin">
           <Header />
           <Landing data={signinLanding} />
+          <UserSignin />
           <Footer />
         </div>
       );
