@@ -12,6 +12,13 @@ import Footer from "./components/footer";
 import Chatbot from "./components/chatbot";
 // import axios from 'axios'
 
+const homeLanding = {
+  title: "Helps you to securely connect to the world over internet",
+  para: "We provide security from cyber threats and a secure internet service.",
+  img: "media/2.png",
+  alt: "Cyber Security"
+};
+
 class App extends Component {
   
   render() {
@@ -19,7 +26,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Chatbot />
-        <Landing />
+        <Landing data={homeLanding} />
         <Services />
         <Expert />
         <Stats />
