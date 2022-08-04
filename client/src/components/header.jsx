@@ -42,10 +42,10 @@ function Header(){
             <div className={style} id="navDiv">
             <button className='close-btn' onClick={responsiveBarClose}>X</button>
             <a className='nav-div-link' href='/'><button className='nav-div-btn'>Home</button></a>
-            <a className='nav-div-link' href='/'><button className='nav-div-btn'>Blog</button></a>
-            <a className='nav-div-link' href='/'><button className='nav-div-btn'>Services</button></a>
-            <a className='nav-div-link' href='/'><button className='nav-div-btn'>About</button></a>
-            <a className='nav-div-link' href='/'><button className='nav-div-btn'>Sign in</button></a>
+            <a className='nav-div-link' href='/articles'><button className='nav-div-btn'>Blog</button></a>
+            <a className='nav-div-link' href='/service'><button className='nav-div-btn'>Services</button></a>
+            <a className='nav-div-link' href='/about'><button className='nav-div-btn'>About</button></a>
+            <a className='nav-div-link' href='/signin'><button className='nav-div-btn'>Sign in</button></a>
             <a className='nav-div-link' href='#' onClick={openSearch}><button className='nav-div-btn'>&#128269;</button></a>
             </div>
 
