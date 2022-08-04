@@ -4,6 +4,8 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Landing from "./components/landing";
 import Contacts from "./components/contacts";
+import Team from "./components/team";
+import Gallery from "./components/gallery";
 
 const aboutLanding = {
   title: "We ensure your swift and secure internet surfing.",
@@ -19,6 +21,8 @@ class About extends Component {
         <div className="About">
           <Header />
           <Landing data={aboutLanding} />
+          <Team />
+          <Gallery />
           <Contacts />
           <Footer />
         </div>
