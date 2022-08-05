@@ -12,8 +12,8 @@ dotenv.config();
 
 const port = process.env.PORT || 5000;
 
-const username = piyushKeeperApp;
-const password = pj7210479283;
+const username = "piyushKeeperApp";
+const password = "pj7210479283";
 const url ="mongodb+srv://" +process.env.DBUsername+ ":" +process.env.DBPassword+ "@keeper.y23nu.mongodb.net/techstartupwebsite?retryWrites=true&w=majority";
 
 mongoose.connect(url,
