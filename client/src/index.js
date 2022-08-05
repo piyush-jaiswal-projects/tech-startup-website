@@ -13,6 +13,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Chatbot from './Chatbot';
 
 const rootElement = document.getElementById("root");
 
@@ -44,7 +45,11 @@ render(
           <Signin />
           </div>
         } />
-
+        <Route path="/chatbot" element={
+          <div>
+          <Chatbot />
+          </div>
+        } />
         <Route path="/userportal" element={
           <div>
           <Userportal />
