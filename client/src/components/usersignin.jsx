@@ -68,14 +68,18 @@ function Usersignin(){
             'password': REGPASS
         }).then((res) => {
             if (res.data.Message === "Already registered") {
-                alert("Already registered! Please Login");
+                alert("Username not available / Already registered");
             }
             else if (res.data.Message === "Registration Success") {
                 alert("Registration Success");
                 const userRegCookie = "username="+REGUSER;
                 const passRegCookie = "password="+REGPASS;
+                const nameRegCookie = "name="+REGNAME;
+                const emailRegCookie = "email="+REGEMAIL;
                 document.cookie = userRegCookie; 
                 document.cookie = passRegCookie;
+                document.cookie = nameRegCookie;
+                document.cookie = emailRegCookie;
                 navigate("/userportal");
             }
             else if (res.data.Message === "Registration failed.") {
