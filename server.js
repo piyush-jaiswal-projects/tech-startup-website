@@ -3,10 +3,29 @@ const bodyParser = require('body-parser');
 // Cross-Origin resource sharing
 const cors = require('cors'); 
 const path = require('path');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
 const app = express();
 
+dotenv.config();
+
 const port = process.env.PORT || 5000;
+
+const username = process.env.DBUsername;
+const password = process.env.DBPassword;
+const url ="mongodb+srv://" +process.env.DBUsername+ ":" +process.env.DBPassword+ "@keeper.y23nu.mongodb.net/techstartupwebsite?retryWrites=true&w=majority";
+
+mongoose.connect(url,
+{ useNewUrlParser: true, useUnifiedTopology: true }, err => {
+    if(err){
+        console.log(err)  
+    }
+    else{
+        console.log('Database Connected')
+    }
+});
+
 
 app.use((req, res, next) => {
     console.log(`Request_Endpoint: ${req.method} ${req.url}`);

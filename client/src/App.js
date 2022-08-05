@@ -6,7 +6,6 @@ import Services from "./components/services";
 import Expert from "./components/expert";
 import Stats from "./components/stats";
 import Contacts from "./components/contacts";
-import Gallery from "./components/gallery";
 import Events from "./components/events";
 import Footer from "./components/footer";
 import Chatbot from "./components/chatbot";
@@ -31,7 +30,6 @@ class App extends Component {
         <Expert />
         <Stats />
         <Events />
-        <Gallery />
         <Contacts />
         <Footer />
       </div>
