@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Landing from "./components/landing";
+import ShopSection from "./components/shopsection";
 
 const shopLanding = {
   title: "Get quality products and services",
@@ -18,6 +19,7 @@ class Shop extends Component {
         <div className="Shop">
           <Header />
           <Landing data={shopLanding} />
+          <ShopSection />
           <Footer />
         </div>
       );
