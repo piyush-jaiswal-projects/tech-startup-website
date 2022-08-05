@@ -1,7 +1,27 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/events.css";
 
 function Events(){
+
+    let navigate = useNavigate();
+
+    function handleEventsButton(){
+        const EMAIL = document.cookie
+    .split('; ')
+    .find((row) => row.startsWith('email='))
+    ?.split('=')[1];
+
+    if(EMAIL === "" || EMAIL === undefined){
+        alert('Please register or login');
+        navigate("/signin");
+    }else{
+        alert('You will soon receive events information in your mail inbox.');
+    }
+
+    }  
+
+
     return(
         <div><h1 className="events-section-title">Upcoming Events</h1>
         <div className="events-content-section">
@@ -12,7 +32,7 @@ function Events(){
 
         <div className="event-para-div">
         <p className="event-para">We conduct lots of awareness workshops and events on recent developments in world of cyber security.</p>
-        <button className="event-btn">Register to get notified</button>
+        <button className="event-btn" onClick={handleEventsButton}>Click to get notified</button>
         </div>
 
         </div>
