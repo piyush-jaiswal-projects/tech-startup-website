@@ -1,12 +1,26 @@
-const userShopData = [
-    {
-        Username: "pj2154",
-        Cart:[]
-    },
+
+const userData = [
     {
         Username: "pj2154",
         Cart:[]
     }
 ];
 
-export default userShopData;
+function addNewUser(){
+    const loggedinUser = document.cookie
+    .split('; ')
+    .find((row) => row.startsWith('username='))
+    ?.split('=')[1];
+
+    let data = 
+    {
+        Username: loggedinUser,
+        Cart: []
+    };
+
+    userData.push(data);
+}
+
+export {
+    userData,
+    addNewUser};

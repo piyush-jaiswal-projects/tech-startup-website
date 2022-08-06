@@ -3,6 +3,7 @@ import "../styles/usersignin.css";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 import Validator from "validator";
+import {userData, addNewUser} from "../dummyData/userData.js";
 
 function Usersignin(){
 
@@ -71,6 +72,7 @@ function Usersignin(){
                 alert("Username not available / Already registered");
             }
             else if (res.data.Message === "Registration Success") {
+                addNewUser();
                 alert("Registration Success");
                 const userRegCookie = "username="+REGUSER;
                 const passRegCookie = "password="+REGPASS;
@@ -111,6 +113,7 @@ function Usersignin(){
                 alert("Invalid Password");
             }
             else if (res.data.Message === "Login Success") {
+                addNewUser();
                 alert("Login Success");
                 const userRegCookie = "username="+LOGUSER;
                 const passRegCookie = "password="+LOGPASS;

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import '../styles/shopsection.css';
 import {productData} from "../dummyData/prodData.js";
-import userData from "../dummyData/userData.js";
+import {userData} from "../dummyData/userData.js";
 
 var userCart = [];
 
@@ -30,10 +30,16 @@ function ProdCard(props){
             var found = userData.find(function (element) {
                 return element.Username === USERNAME;
             });
-            found.Cart.push(prod);
+            
+            if(found){
+                found.Cart.push(prod);
             console.log(found.Cart);
             userCart = found.Cart;
             navigate("/userportal");
+            }
+            else{
+                alert('Backend Problem: User not found');
+            }
         }
     }
 
