@@ -36,9 +36,6 @@
     color: rgb(57, 133, 184);
 }
 
-.nav-bar a.active{
-    color: rgb(51, 80, 160);
-}
 
 .nav-bar .icon{
     display: none;

@@ -56,6 +56,10 @@ useEffect(handleUser, []);
       setSearchStyle("hide");
     }
   }
+
+  function handleSearch(){
+    alert('Your result: ');
+  }
     
         return (
           <div class="header" id="header">
@@ -87,9 +91,9 @@ useEffect(handleUser, []);
 
 
             <div className={searchStyle} id="SearchBox">
-            <form className="search-form" method='post' action='/search' autoFocus>
+            <form className="search-form" autoFocus>
             <input className="search-query" type="text" name='searchItem' placeholder='type here to search' ></input>
-            <button className="search-btn">&#128269;</button>
+            <button className="search-btn" onClick={handleSearch}>&#128269;</button>
             <a className="search-btn" onClick={closeSearch}>X</a>
             </form>
             </div>

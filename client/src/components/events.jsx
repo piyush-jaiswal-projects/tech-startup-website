@@ -13,7 +13,7 @@ function Events(){
     ?.split('=')[1];
 
     if(EMAIL === "" || EMAIL === undefined){
-        alert('Please register or login');
+        alert('Email not found. Please register or login');
         navigate("/signin");
     }else{
         alert('You will soon receive events information in your mail inbox.');

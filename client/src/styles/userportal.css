@@ -8,12 +8,14 @@
 .cart-section{
     float: left;
     margin: 2rem;
-    padding: 1rem;
+    padding: 0rem;
     box-shadow: 1px 1px 5px 5px rgba(190, 187, 187, 0.5);
     background-color: white;
     width: 60vw;
     height: 80vh;
     overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .user-details-section,.user-account-section{
     text-align: center;

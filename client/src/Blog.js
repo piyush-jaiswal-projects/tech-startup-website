@@ -7,7 +7,7 @@ import Articles from "./components/articles";
 
 const blogLanding = {
   title: "Don't miss out on latest developments in cyber security",
-  para: "We publish articles on our upcoming prducts, workshops, and technological developments.",
+  para: "We publish short articles on our upcoming prducts, workshops, and technological developments.",
   img: "media/9.png",
   alt: "Articles"
 };
