@@ -38,6 +38,11 @@ function ProdCard(props){
     }
 
     function addToCart(){
+        if(USERNAME === "" || USERNAME === undefined){
+            alert('Please Login');
+            navigate("/signin");
+        }
+        else{
         if(cartBtnText === "Add to Cart"){
             var found = userData.find(function (element) {
                 return element.Username === USERNAME;
@@ -58,6 +63,7 @@ function ProdCard(props){
             alert('Removed from cart');
             setCartBtnText("Add to Cart");
         }
+    }
     }
 
 
