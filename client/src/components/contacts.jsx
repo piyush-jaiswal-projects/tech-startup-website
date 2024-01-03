@@ -19,7 +19,7 @@ function Contacts(){
             <img src="media/email.png" className="location-image email-image" alt="email"></img>
             <h3 className="address-title">Email Us</h3>
             <p className="contact-section-para">
-                piyush@swiftconnect.com<br></br>
+                info@swiftconnect.com<br></br>
                 contact@swiftconnect.com
             </p>
         </div>
