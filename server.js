@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 // Cross-Origin resource sharing
-const cors = require('cors'); 
+const cors = require('cors');
 const path = require('path');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
@@ -10,21 +10,23 @@ const app = express();
 
 dotenv.config();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
-const username = "piyushKeeperApp";
-const password = "pj7210479283";
-const url ="mongodb+srv://" +username+ ":" +password+ "@keeper.y23nu.mongodb.net/techstartupwebsite?retryWrites=true&w=majority";
+async function connectDb() {
+    const username = "piyushKeeperApp";
+    const password = "pj7210479283";
+    const dburl = "mongodb+srv://pjadmin2154:Le32Jxpab0z2pC0g@cluster0.dwjvq.mongodb.net/"
 
-mongoose.connect(url,
-{ useNewUrlParser: true, useUnifiedTopology: true }, err => {
-    if(err){
-        console.log(err)  
-    }
-    else{
-        console.log('Database Connected')
-    }
-});
+    mongoose.connect(dburl,
+        { useNewUrlParser: true, useUnifiedTopology: true }, err => {
+            if (err) {
+                console.log(err)
+            }
+            else {
+                console.log('Database Connected')
+            }
+        });
+}
 
 
 app.use((req, res, next) => {
@@ -57,4 +59,10 @@ app.get('*', (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`BACK_END_SERVICE_PORT: ${port}`));
+app.listen(port, () => {
+    connectDb()
+    console.log(`BACK_END_SERVICE_PORT: ${port}`);
+}
+);
+
+module.exports = connectDb

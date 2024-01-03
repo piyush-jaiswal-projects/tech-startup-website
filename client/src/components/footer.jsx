@@ -4,9 +4,7 @@ import "../styles/footer.css";
 function Footer(){
     return(
         <div className="footer-section">
-        <p className="footer-text">&#169; Copyright Piyush Jaiswal   |   All Rights Reserved
-            <br></br>
-            <b>Designed by Piyush Jaiswal</b>
+        <p className="footer-text">&#169; Copyright 2024   |   All Rights Reserved
             </p>
         </div>
     );

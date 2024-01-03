@@ -1,10 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const {userSchema} = require("../database/database.js");
+const { connectDb } = require("../server.js");
 
 const User = mongoose.model("User", userSchema);
 
-function register(req, res){
+async function register(req, res) {
+    await connectDb()
 
     console.log("Registration triggered");
     console.log(req.body);

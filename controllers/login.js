@@ -1,10 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const {userSchema} = require("../database/database.js");
+const { connectDb } = require("../server.js");
 
 const User = mongoose.model("User", userSchema);
 
-function login(req, res){
+async function login(req, res) {
+    await connectDb()
     const username = req.body.username;
     const password = req.body.password;
     var message = null;
