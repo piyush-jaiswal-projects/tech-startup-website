@@ -21,7 +21,6 @@ class About extends Component {
         <div className="About">
           <Header />
           <Landing data={aboutLanding} />
-          <Team />
           <Gallery />
           <Contacts />
           <Footer />

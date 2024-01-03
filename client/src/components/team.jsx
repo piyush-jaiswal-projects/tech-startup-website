@@ -13,11 +13,6 @@ function Team(){
         <h3 className="member-desg">Co-Founder | Cyber Security Specialist</h3>
         </div>
 
-        <div className="member-card">
-        <img className="member-img" src="media/member/1.png" alt="Piyush Jaiswal"></img>
-        <h2 className="member-name">Piyush Jaiswal</h2>
-        <h3 className="member-desg">CEO & Founder | Web Developer</h3>
-        </div>
 
         <div className="member-card">
         <img className="member-img" src="media/member/2.png" alt="Member Pic"></img>
